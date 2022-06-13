@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito Sans", Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #787878;
+}
+
+.login {
+	height: 80vh;
+	background-color: white;
+	background-size: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__container {
+	min-height: 400px;
+	width: 300px;
+	background: white;
+	box-sizing: border-box;
+	padding: 32px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__title {
+	margin-bottom: 32px;
+	color: #303030;
+}
+
+.login__form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__input {
+	height: 60px;
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 8px;
+	border: unset;
+	outline: none;
+}
+
+.login__input-border {
+	height: 1px;
+	width: 100%;
+	margin-bottom: 16px;
+	background-color: #cfcfcf;
+	transition: 0.3s ease-in-out;
+}
+
+.login__input-border::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 0;
+	margin-bottom: 16px;
+	background: #10c9c3;
+	transition: 0.3s ease-in-out;
+}
+
+.login__input:focus + .login__input-border::after {
+	width: 100%;
+}
+
+.login__submit {
+	height: 48px;
+	width: 100%;
+	padding-left: 8px;
+	outline: none;
+	position: relative;
+	background: #10c9c3;
+	background-size: 200%;
+	margin-bottom: 32px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	border: unset;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.login__submit:hover {
+	background-position: right;
+}
+
+.login__reset {
+	font-size: 15px;
+	color: #10c9c3;
+	text-decoration: none;
+}
+.header {
+	padding-top: 38px;
+	padding-bottom: 38px;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	text-transform: uppercase;
+}
+
+.menu__link {
+	color: #191919;
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 30px;
+	padding: 15px;
+}
+
+.menu__link_active {
+	color: #10c9c3;
+}
+#footer {
+	color: #222222;
+	font-size: 2vh;
+	text-align: center;
+	background-color: #10c9c3;
+}
